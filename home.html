@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SkillConnect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">SkillConnect</div>
+</nav>
+
+<section class="hero">
+    <h1>Connect Skills Across Campus</h1>
+</section>
+
+<!-- SEARCH -->
+<section class="search-section">
+    <input type="text" id="searchInput" placeholder="Search skill...">
+</section>
+
+<!-- SKILLS -->
+<section class="skills-section">
+    <h2>All Skills</h2>
+    <div id="skillsContainer"></div>
+</section>
+
+<!-- MATCHES -->
+<section class="matches-section">
+    <h2>Your Matches</h2>
+    <div id="matchesContainer"></div>
+</section>
+
+<!-- ADD -->
+<section class="add-section">
+    <h2>Add Skill</h2>
+    <form id="skillForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="text" id="skill" placeholder="Skill Name" required>
+
+        <select id="type">
+            <option value="Teach">Teach</option>
+            <option value="Learn">Learn</option>
+        </select>
+
+        <select id="level">
+            <option value="Beginner">Beginner</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Advanced">Advanced</option>
+        </select>
+
+        <button type="submit">Add Skill</button>
+    </form>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
